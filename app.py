@@ -87,7 +87,7 @@ with st.form("input_form"):
             "Exercise frequency (sessions per week)", min_value=0, max_value=14, value=3, step=1
         )
         mental_health_rating = st.slider(
-            "Mental health rating (1-10)", min_value=1, max_value=10, value=6, step=1
+            "Mental health rating (1 = Poor, 10 = Excellent)", min_value=1, max_value=10, value=6, step=1
         )
 
     submitted = st.form_submit_button("Predict Exam Score")
